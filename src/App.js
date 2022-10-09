@@ -1,12 +1,11 @@
 import './App.css';
-import {useState} from 'react';
 
 function App() {
-  const [ status, setStatus ] = useState(false)
+  const status = false;
 
   return (
     <div className="App">
-      <button onClick={() => setStatus(!status)}>
+      <button onClick={() => !status}>
         This light is {status ? "on" : "off"}!
       </button>
     </div>
